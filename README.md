@@ -30,3 +30,34 @@ AI 서버는 데이터를 저장하거나 사용자를 인증하지 않습니다
 
 - [AI ↔ BE 계약](https://github.com/Novel-SekAI/docs/blob/main/02-%EC%84%A4%EA%B3%84/AI-BE-CONTRACT.md)
 - [공통 데이터 모델](https://github.com/Novel-SekAI/docs/blob/main/02-%EC%84%A4%EA%B3%84/DATA-MODEL.md)
+
+## 로컬 개발
+
+API 애플리케이션은 Python 3.12와 `uv`를 사용합니다. vLLM 모델 서버는 이 환경에
+설치하지 않고 별도의 Linux GPU 환경에서 실행합니다.
+
+```powershell
+uv python install 3.12
+uv sync --all-groups
+Copy-Item .env.example .env
+uv run uvicorn sekai_ai.app:create_app --factory --reload --port 8000
+```
+
+상태 확인:
+
+```powershell
+Invoke-RestMethod http://127.0.0.1:8000/health
+```
+
+검증:
+
+```powershell
+uv run ruff check .
+uv run ruff format --check .
+uv run mypy src tests
+uv run pytest
+```
+
+`.env`에는 로컬 값만 두고 Git에 커밋하지 않습니다. stage/prod에서는 service token이
+없으면 애플리케이션 설정 검증이 실패합니다. 고정되지 않은 model revision은 추후
+`/ready` 검사에서 배포 준비 실패로 처리합니다.

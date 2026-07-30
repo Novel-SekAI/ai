@@ -1,0 +1,74 @@
+[build-system]
+requires = ["hatchling>=1.27,<2"]
+build-backend = "hatchling.build"
+
+[project]
+name = "sekai-ai"
+version = "0.1.0"
+description = "SekAI structured worldview generation service"
+readme = "README.md"
+requires-python = ">=3.12,<3.13"
+dependencies = [
+    "fastapi<1",
+    "openai<3",
+    "pydantic>=2.11,<3",
+    "pydantic-settings<3",
+    "uvicorn[standard]<1",
+]
+
+[dependency-groups]
+dev = [
+    "httpx<1",
+    "hypothesis<7",
+    "mypy<2",
+    "pytest<9",
+    "pytest-asyncio<2",
+    "pytest-cov<8",
+    "respx<1",
+    "ruff<1",
+]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/sekai_ai"]
+
+[tool.pytest.ini_options]
+addopts = [
+    "--strict-config",
+    "--strict-markers",
+]
+testpaths = ["tests"]
+
+[tool.coverage.run]
+branch = true
+source = ["sekai_ai"]
+
+[tool.coverage.report]
+show_missing = true
+skip_covered = true
+fail_under = 80
+
+[tool.ruff]
+line-length = 100
+target-version = "py312"
+extend-exclude = ["docs"]
+
+[tool.ruff.lint]
+select = [
+    "ASYNC",
+    "B",
+    "E",
+    "F",
+    "I",
+    "SIM",
+    "UP",
+]
+
+[tool.mypy]
+python_version = "3.12"
+strict = true
+files = ["src", "tests"]
+plugins = ["pydantic.mypy"]
+
+[[tool.mypy.overrides]]
+module = ["tests.*"]
+disallow_untyped_defs = false
