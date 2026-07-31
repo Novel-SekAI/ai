@@ -1,0 +1,25 @@
+{
+  "project": {
+    "title": "라스트 콜로니",
+    "genre": "SF",
+    "summary": "요약"
+  },
+  "eras": [],
+  "characters": [
+    {
+      "tempId": "c1",
+      "name": "레이 아스터",
+      "role": "주인공",
+      "groups": null,
+      "tags": [],
+      "description": ""
+    }
+  ],
+  "relationshipsByEra": {},
+  "factions": [],
+  "factionRelationshipsByEra": {},
+  "law": {
+    "markdown": ""
+  },
+  "timeline": []
+}

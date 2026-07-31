@@ -1,0 +1,6 @@
+{
+  "modelVersion": "sekai-ft-2026-07",
+  "baseModel": "Qwen/Qwen3.5-9B",
+  "loadedAt": "2026-07-20T11:00:00Z",
+  "quantization": "awq"
+}

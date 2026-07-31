@@ -1,0 +1,99 @@
+{
+  "schemaVersion": "1.0",
+  "requestId": "3f2a1c8e-9b47-4d21-a5e6-70c1d9f83b42",
+  "worldview": {
+    "project": {
+      "title": "라스트 콜로니",
+      "genre": "SF",
+      "summary": "기억을 잃은 항해사가 멸망 직전의 우주를 횡단한다."
+    },
+    "eras": [
+      "0년",
+      "61년"
+    ],
+    "characters": [
+      {
+        "tempId": "c1",
+        "name": "레이 아스터",
+        "role": "주인공",
+        "groups": [
+          "f1"
+        ],
+        "tags": [
+          "항해사",
+          "기억상실"
+        ],
+        "description": "잃어버린 항로와 기억을 함께 추적한다."
+      },
+      {
+        "tempId": "c2",
+        "name": "미라 벨",
+        "role": "조력자",
+        "groups": [],
+        "tags": [],
+        "description": ""
+      }
+    ],
+    "relationshipsByEra": {
+      "0년": [],
+      "61년": [
+        {
+          "from": "c1",
+          "to": "c2",
+          "relation": "friendly",
+          "summary": "마지막 항해를 함께한다."
+        }
+      ]
+    },
+    "factions": [
+      {
+        "tempId": "f1",
+        "name": "검은 탑",
+        "role": "지배 세력",
+        "tags": [
+          "항로 통제"
+        ],
+        "description": "남은 항로를 독점한다."
+      },
+      {
+        "tempId": "f2",
+        "name": "새벽 함대",
+        "role": "저항 세력",
+        "tags": [],
+        "description": ""
+      }
+    ],
+    "factionRelationshipsByEra": {
+      "0년": [],
+      "61년": [
+        {
+          "from": "f1",
+          "to": "f2",
+          "relation": "hostile",
+          "summary": "마지막 항로의 통제권을 두고 대립한다."
+        }
+      ]
+    },
+    "law": {
+      "markdown": "# 세계관 사전\n\n## 항로\n남은 항로는 유한하며 검은 탑이 통제한다."
+    },
+    "timeline": [
+      {
+        "era": "0년",
+        "title": "대이주",
+        "desc": "인류가 붕괴하는 항성계를 떠났다."
+      },
+      {
+        "era": "61년",
+        "title": "마지막 항해",
+        "desc": "레이와 미라가 봉쇄된 항로로 진입한다."
+      }
+    ]
+  },
+  "usage": {
+    "inputTokens": 812,
+    "outputTokens": 2450,
+    "latencyMs": 18400
+  },
+  "modelVersion": "sekai-ft-2026-07"
+}

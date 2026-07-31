@@ -1,0 +1,17 @@
+{
+  "project": {
+    "title": "라스트 콜로니",
+    "title": "중복 제목",
+    "genre": "SF",
+    "summary": "요약"
+  },
+  "eras": [],
+  "characters": [],
+  "relationshipsByEra": {},
+  "factions": [],
+  "factionRelationshipsByEra": {},
+  "law": {
+    "markdown": ""
+  },
+  "timeline": []
+}
