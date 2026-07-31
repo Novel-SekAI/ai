@@ -1,0 +1,27 @@
+{
+  "project": {
+    "title": "라스트 콜로니",
+    "genre": "SF",
+    "summary": "요약"
+  },
+  "eras": [],
+  "characters": [],
+  "relationshipsByEra": {},
+  "factions": [
+    {
+      "tempId": "f1",
+      "name": "검은 탑",
+      "role": "지배 세력",
+      "tags": [],
+      "description": "",
+      "members": [
+        "c1"
+      ]
+    }
+  ],
+  "factionRelationshipsByEra": {},
+  "law": {
+    "markdown": ""
+  },
+  "timeline": []
+}

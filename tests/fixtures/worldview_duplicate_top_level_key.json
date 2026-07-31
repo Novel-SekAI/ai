@@ -1,0 +1,21 @@
+{
+  "project": {
+    "title": "첫 번째",
+    "genre": "SF",
+    "summary": "요약"
+  },
+  "project": {
+    "title": "두 번째",
+    "genre": "SF",
+    "summary": "요약"
+  },
+  "eras": [],
+  "characters": [],
+  "relationshipsByEra": {},
+  "factions": [],
+  "factionRelationshipsByEra": {},
+  "law": {
+    "markdown": ""
+  },
+  "timeline": []
+}

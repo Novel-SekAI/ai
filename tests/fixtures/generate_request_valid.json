@@ -1,0 +1,13 @@
+{
+  "schemaVersion": "1.0",
+  "requestId": "3f2a1c8e-9b47-4d21-a5e6-70c1d9f83b42",
+  "brief": "멸망 직전의 우주를 배경으로 한 SF. 주인공은 기억을 잃은 항해사다.",
+  "hints": {
+    "title": "라스트 콜로니",
+    "genre": "SF"
+  },
+  "options": {
+    "language": "ko",
+    "modelVersion": "sekai-ft-2026-07"
+  }
+}

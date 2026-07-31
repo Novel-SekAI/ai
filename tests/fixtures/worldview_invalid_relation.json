@@ -1,0 +1,27 @@
+{
+  "project": {
+    "title": "라스트 콜로니",
+    "genre": "SF",
+    "summary": "요약"
+  },
+  "eras": [
+    "61년"
+  ],
+  "characters": [],
+  "relationshipsByEra": {
+    "61년": [
+      {
+        "from": "c1",
+        "to": "c2",
+        "relation": "allied",
+        "summary": "잘못된 enum"
+      }
+    ]
+  },
+  "factions": [],
+  "factionRelationshipsByEra": {},
+  "law": {
+    "markdown": ""
+  },
+  "timeline": []
+}
