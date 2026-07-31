@@ -1,15 +1,8 @@
-from typing import Literal
-
 from fastapi import APIRouter
-from pydantic import BaseModel, ConfigDict
+
+from sekai_ai.schemas.contract import HealthResponse
 
 router = APIRouter()
-
-
-class HealthResponse(BaseModel):
-    model_config = ConfigDict(extra="forbid", strict=True)
-
-    status: Literal["ok"]
 
 
 @router.get(
